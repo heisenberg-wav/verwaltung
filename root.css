@@ -1,12 +1,12 @@
 :root{
-    --color-1: ;
-    --color-2: ;
+    --color-1: blue;
+    --color-2: cyan;
 
-    --btn-color: ;
-    --btn-hov-color: ;
+    --btn-color: cyan;
+    --btn-hov-color: blue;
 
-    --bg-color: ;
+    --bg-color: #fff;
 
-    --font-color: ;
-    
+    --font-color: #000;
+
 }

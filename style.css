@@ -1,0 +1,27 @@
+@import "root.css";
+
+*{
+    margin: 0;
+    padding: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: var(--bg-color);
+}
+
+h1{
+    color: var(--font-color);
+    font-size: 25px;
+}
+
+button{
+    background-color: var(--btn-color);
+    color: var(--font-color);
+}
+
+button:hover{
+    background-color: var(--btn-hov-color);
+    color: #fff;
+}

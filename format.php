@@ -14,10 +14,50 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet"> 
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/charts.css/dist/charts.min.css">
+
         
         <link rel="stylesheet" href="style.css">
         
         <title>Formatierungen</title>
+
+        <script>
+            window.onload = function () {
+
+            var chart = new CanvasJS.Chart("chartContainer", {
+                animationEnabled: true,
+                theme: "light2",
+                title:{
+                    text: "Simple Line Chart"
+                },
+                backgroundColor: "transparent",
+                data: [{        
+                    type: "line",
+                    lineColor: "black",
+                    markerColor: "black",
+                    
+                    indexLabelFontSize: 16,
+                    dataPoints: [
+                        { y: 450 },
+                        { y: 414},
+                        { y: 520, indexLabel: "\u2191 highest",markerColor: "lime", markerType: "triangle" },
+                        { y: 460 },
+                        { y: 450 },
+                        { y: 500 },
+                        { y: 480 },
+                        { y: 480 },
+                        { y: 410 , indexLabel: "\u2193 lowest",markerColor: "red", markerType: "cross" },
+                        { y: 500 },
+                        { y: 480 },
+                        { y: 510 }
+                    ]
+                }]
+            });
+            chart.render();
+
+            }
+        </script>
     </head>
     <body>
         <h1>H1 Heading</h1>
@@ -49,6 +89,11 @@
                 }
             })
         </script>
+
+        <div id="chartContainer" style="height: 30vw; width: 30vw; margin-top: 30px; margin-bottom: 50px; background-color: transparent;"></div>
+
+
+        <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
     </body>

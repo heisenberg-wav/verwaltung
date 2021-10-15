@@ -1,7 +1,7 @@
 @import "root.css";
 
 body{
-    background-color: var(--bg-color);
+    background-color: #e2e1e0;
 }
 
 /* Headdings */
@@ -48,7 +48,7 @@ button{
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
     font-size: 10px;
 
-    transition: .3s;
+    transition: .5s;
 }
 
 button:hover{
@@ -65,7 +65,8 @@ button:hover{
 
 .sm-btn{
     background-color: var(--btn-color);
-    color: var(--btn-font-color);
+
+    font-size: 40px;
 
     width: 30px;
     height: 30px;
@@ -85,7 +86,7 @@ button:hover{
     width: 30px;
     height: 30px;
 
-    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.864) -3px -3px 6px 1px inset;
 }
 
 .sm-btn:active{
@@ -95,5 +96,27 @@ button:hover{
     width: 30px;
     height: 30px;
 
-    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.905) -3px -3px 6px 1px inset;
+}
+
+.card-bdy .card-content .my-chart.line {
+    height: 200px;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+#placeholder{
+    height: 40vw;
+    width: 95%;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.lang-logo .lng-ico i:hover{
+    color: #1EC1EA;
+}
+
+badge{
+    font-size: 10px;
 }

@@ -52,7 +52,7 @@
                 animationEnabled: true,
                 theme: "light2",
                 title:{
-                    text: "Simple Line Chart"
+                    text: "Kontoverlauf"
                 },
                 backgroundColor: "transparent",
                 data: [{        
@@ -85,11 +85,35 @@
     <body style="background-color: #e2e1e0; width: 93%; overflow-x: hidden;">
 
         <!-- ////  //////  //// -->
+        <!-- //// Sidebar  //// -->
+        <!-- ////  //////  //// -->
+
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#"><i class="bi bi-bank" style="margin-right: 10px;"></i> Finanzen</a>
+            <a href="#"><i class="bi bi-box-seam" style="margin-right: 10px;"></i> Inventar</a>
+            <a href="#"><i class="bi bi-file-earmark-person" style="margin-right: 10px;"></i> Personal</a>
+            <a href="#"><i class="bi bi-globe" style="margin-right: 10px;"></i> Web</a>
+            <a href="#"><i class="bi bi-calendar" style="margin-right: 10px;"></i> Termine</a>
+        </div>
+
+        <script>
+            function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            }
+
+            function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            }
+        </script>
+
+        <!-- ////  //////  //// -->
         <!-- ////  Header  //// -->
         <!-- ////  //////  //// -->
 
         <div class="container header" style="position: fixed; top: 0; padding-bottom: 20px; transform: translateY(-100vh); opacity: 0;">
-            <a class="icon position-absolute" style="font-size: 40px; color: #1EC1EA;" href="#"><i class="bi bi-list"></i></a>
+            <span class="icon position-absolute" style="font-size: 40px; cursor: pointer; color: #1EC1EA;" onclick="openNav()">&#9776;</span>
+            <!-- <a class="icon position-absolute" style="font-size: 40px; color: #1EC1EA;" href="#"><i class="bi bi-list"></i></a> -->
             <h1 class="text-center" style="margin-top: 2.7vw;">Dashboard</h1>
             <a class="icon position-absolute" style="font-size: 38px; color: #1EC1EA; top: .5vw; right: 7vw;" href="#"><i class="bi bi-gear"></i></a>
         </div>
@@ -129,15 +153,17 @@
         <!-- ////  Cards  //// -->
         <!-- //// //////  //// -->
 
+        <!-- +++ Finanzen +++ -->
+
         <div class="container placeholder-1" title="Finanzen" style="transform: translateX(-100%); opacity: 0; z-index: -1; position: relative; height: 20vw; width: 102%; margin-left: 2.5%; border-radius: 12px; background-color: #fff; margin-top: 10px; margin-bottom: 10px; box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);">
             <a href="#" class="icon symbol position-absolute" style="position: absolute; left: 15px; top: 2px; font-size: 30px; color: #1EC1EA;"><i class="bi bi-bank"></i></a>
             <a href="#" class="icon position-absolute" style="position: absolute; right: 15px; top: 2px; font-size: 30px; color: #1EC1EA;"><i class="bi bi-three-dots"></i></a>
             <h5 style="position: absolute; left: 54px; top: 8px; font-size: 28px; color: #1EC1EA;">Finanzen</h5>
 
 
-                <div class="container card-bdy" style="position: relative; top: 12vw; height: 70%; width: 100%; border-radius: 20px;">
-                    <div class="container card-content" style="z-index: 5; position: absolute; width: 100%; height: 95%;">
-                        <div class="container" id="chartContainer" style="z-index: 10;"></div>
+                <div class="container card-bdy" style="position: relative; top: 12vw; height: 80%; width: 100%; border-radius: 20px;">
+                    <div class="container card-content" style="z-index: 5; position: absolute; width: 100%; height: 15%;">
+                        <div class="container" id="chartContainer" style="z-index: 10; height: 25vh; width: 90vw; margin-left: -10vw;"></div>
                     </div>
 
                     <p class="text-center" style="font-size: 44px; color: #fff;"> <br>
@@ -146,6 +172,8 @@
 
             <a href="#" style="position: absolute; bottom: 2px; right: 15px; font-size: 40px; color: #1EC1EA;"><i class="bi bi-arrow-right"></i></a>
         </div>
+
+        <!-- Inventar -->
 
         <div class="container placeholder-2" title="Inventar" style="transform: translateX(-100%); opacity: 0; z-index: -1; position: relative; height: 20vw; width: 102%; margin-left: 2.5%; border-radius: 12px; background-color: #fff; margin-top: 10px; margin-bottom: 10px; box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);">
             <a href="#" class="icon symbol position-absolute" style="position: absolute; left: 15px; top: 2px; font-size: 30px; color: #1EC1EA;"><i class="bi bi-box-seam"></i></a>
@@ -283,7 +311,7 @@
 
             @keyframes growHeightCard{
                 100%{
-                    height: 50vw;
+                    height: 70vw;
                 }
             }
 
@@ -352,6 +380,8 @@
             }
         </style>
         
+
+        <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 
         <script src="https://kit.fontawesome.com/b95e6b0355.js" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>

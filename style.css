@@ -1,4 +1,5 @@
 @import "root.css";
+@import "statistic.css";
 
 body{
     background-color: #e2e1e0;
@@ -34,21 +35,6 @@ h6{
 
 p{
     color: var(--font-color);
-}
-
-button{
-    background-color: var(--btn-color);
-    color: var(--btn-font-color);
-    
-    width: 10%;
-    height: 4%;
-
-    border: none;
-    border-radius: 12px;
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-    font-size: 10px;
-
-    transition: .5s;
 }
 
 button:hover{
@@ -108,7 +94,7 @@ button:hover{
 #placeholder{
     height: 40vw;
     width: 95%;
-    background-color: #fff;
+    background-color: var(--card-light);
     border-radius: 12px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
@@ -122,7 +108,7 @@ button:hover{
 }
 
 .sidenav {
-    height: 100%;
+    height: 100vh;
     width: 0;
     position: fixed;
     z-index: 1;
@@ -132,13 +118,15 @@ button:hover{
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
+    border-radius: 0 12px 12px 0;
+    box-shadow: 10px 10px 25px grey;
   }
   
   .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
+    color: #1EC1EA;
     display: block;
     transition: 0.3s;
   }
@@ -159,3 +147,139 @@ button:hover{
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
   }
+
+
+  .sideset{
+    height: 100vh;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: var(--bg-color);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    border-radius: 12px 0 0 12px;
+    box-shadow: 10px 10px 25px grey;
+  }
+  
+  .sideset a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #1EC1EA;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sideset a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sideset .closebtnset {
+    position: absolute;
+    top: 0;
+    left: -15vw;
+    font-size: 40px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sideset {padding-top: 15px;}
+    .sideset a {font-size: 18px;}
+  }
+
+  .display-settings{
+    height: 100vh;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: var(--bg-color);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    border-radius: 12px 0 0 12px;
+    box-shadow: 10px 10px 25px grey;
+  }
+
+  .header{
+    height: 15vw;
+    width: 100%;
+    background-color: var(--card-light);
+    border-radius: 0 0 12px 12px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+header .icon{
+    font-size: 60px;
+}
+
+.main-content .content-header h5{
+    font-weight: bold;
+    color: #1EC1EA;
+}
+
+.main-content .content-element{
+    width: 100%;
+    height: 15vw;
+    border-top: 1px solid rgb(196, 196, 196);
+    border-bottom: 1px solid rgb(196, 196, 196);
+    padding: 0;
+    font-size: 22px;
+}
+
+.main-content .content-element .element-text{
+    top: 2vw;
+}
+
+.main-content .content-element .element-label{
+    left: 15px;
+}
+
+.main-content .content-element .element-value{
+    right: 15px;
+}
+
+.back-btn{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 13vw;
+    height: 13vw;
+    border: none;
+    background-color: transparent;
+    color: #1EC1EA;
+    font-size: 30px;
+}
+
+.back-btn:hover{
+    border-radius: 20px;
+    background-color: rgb(185, 182, 182);
+}
+
+.display-element{
+    width: 100%;
+    height: 25vw;
+}
+
+.display-element .mode-changer{
+    width: 95%;
+    height: 60%;
+}
+
+.display-element .mode-changer .mode-btn{
+    width: 15vw;
+    height: 15vw;
+    border: none;
+    border-radius: 15px;
+    font-size: 30px;
+    background-color: #fff;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.display-element .mode-changer .mode-btn:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}

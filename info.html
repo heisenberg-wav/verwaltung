@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet"> 
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="statistic.css">
+    
+    <title>Informationen</title>
+</head>
+<body>
+    <!-- HEADER -->
+    <div class="container header" style="position: fixed; top: 0; padding-bottom: 20px; transform: translateY(-100vh); opacity: 0; z-index: 1   ;">
+        <a href="statistic.php" style="position: absolute; left: 10px; top: 0; font-size: 35px; color: #1EC1EA;"><i class="bi bi-arrow-left"></i></a>
+
+        <h1 class="text-center" style="margin-top: 2.7vw; color: #1EC1EA;">Informationen</h1>
+    </div>
+
+    <!-- CONTENT DIV -->
+    <div class="container main-content" style="width: 98%; height: 100vh; background-color: #fff; border-radius: 0 0 20px 20px; transform: translateY(-110vh); z-index: 0;">
+
+        <div class="container space" style="height: 17vw; margin-bottom: 12px;"></div>
+
+        <div class="container content-header"><h5 class="text-center">Algemein</h5></div>
+
+        <div class="container content-element position-relative">
+            <p class="element-label element-text position-absolute start-0">Version:</p>
+
+            <p class="element-value element-text position-absolute end-0">BETA V1.1.1</p>
+        </div>
+
+        <div class="container content-element position-relative">
+            <p class="element-label element-text position-absolute start-0">Label</p>
+
+            <p class="element-value element-text position-absolute end-0">Value</p>
+        </div>
+
+        <div class="container content-element position-relative">
+            <p class="element-label element-text position-absolute start-0">Label</p>
+
+            <p class="element-value element-text position-absolute end-0">Value</p>
+        </div>
+
+        <div class="container content-element position-relative">
+            <p class="element-label element-text position-absolute start-0">Label</p>
+
+            <p class="element-value element-text position-absolute end-0">Value</p>
+        </div>
+
+        <div class="container content-element position-relative">
+            <p class="element-label element-text position-absolute start-0">Label</p>
+
+            <p class="element-value element-text position-absolute end-0">Value</p>
+        </div>
+
+        <div class="container content-element position-relative">
+            <p class="element-label element-text position-absolute start-0">Label</p>
+
+            <p class="element-value element-text position-absolute end-0">Value</p>
+        </div>
+
+        <div class="container content-element position-relative">
+            <p class="element-label element-text position-absolute start-0">Label</p>
+
+            <p class="element-value element-text position-absolute end-0">Value</p>
+        </div>
+
+        <div class="container content-element position-relative">
+            <p class="element-label element-text position-absolute start-0">Label</p>
+
+            <p class="element-value element-text position-absolute end-0">Value</p>
+        </div>
+
+        <div class="container content-element position-relative">
+            <p class="element-label element-text position-absolute start-0">Label</p>
+
+            <p class="element-value element-text position-absolute end-0">Value</p>
+        </div>
+
+        <div class="container content-element position-relative">
+            <p class="element-label element-text position-absolute start-0">Label</p>
+
+            <p class="element-value element-text position-absolute end-0">Value</p>
+        </div>
+
+
+    </div>
+
+    <style>
+        @keyframes slideInFromLeft {
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes growHeightHead{
+            100%{
+                height: 50vw;
+            }
+        }
+
+        @keyframes growHeightCard{
+            100%{
+                height: 70vw;
+            }
+        }
+
+        @keyframes slideInFromTop {
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeDown {
+            100% {
+                transform: translateY(0);
+                transform: translateX(0);
+                width: 102%;
+                height: 70vw;
+                opacity: 1;
+            }
+        }
+
+        @keyframes mainDown{
+            100%{
+                transform: translateY(0);
+            }
+        }
+
+        .main-content{
+            animation: 1.5s forwards 0s 1 slideInFromTop;
+            animation-delay: .4s;
+        }
+
+        .header{
+            animation: .5s forwards 0s 1 slideInFromTop;
+            animation-delay: .2s;
+        }
+
+        .head{
+            animation: 
+                .5s forwards 0s 1 fadeDown,
+                2.5s forwards 0s 1 growHeightHead;
+            animation-delay: .4s;
+        }
+
+        .placeholder-1{  
+            animation: 
+                .5s forwards 0s 1 slideInFromLeft,
+                4s forwards 0s 1 growHeightCard;
+            animation-delay: .2s;
+        }
+
+        .placeholder-2{  
+            animation: 
+                .5s forwards 0s 1 slideInFromLeft,
+                4s forwards 0s 1 growHeightCard;
+            animation-delay: .4s;
+        }
+
+        .placeholder-3{  
+            animation: 
+                .5s forwards 0s 1 slideInFromLeft,
+                4s forwards 0s 1 growHeightCard;
+            animation-delay: .6s;
+        }
+
+        .placeholder-4{  
+            animation: 
+                .5s forwards 0s 1 slideInFromLeft,
+                4s forwards 0s 1 growHeightCard;
+            animation-delay: .8s;
+        }
+
+        .placeholder-5{  
+            animation: 
+                .5s forwards 0s 1 slideInFromLeft,
+                4s forwards 0s 1 growHeightCard;
+            animation-delay: 1s;
+        }
+    </style>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+</html>

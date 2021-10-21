@@ -9,9 +9,14 @@
     --btn-hov-color: rgb(228, 228, 228);
     --btn-font-color: rgb(41, 41, 41);
 
-    --bg-color: #fff;
+    --bg-color: #e2e1e0;
+    --bg-darkmode: #293133;
+
+    --card-light: #fff;
+    --card-dark: #475357;
 
     --font-color: #000;
+    --font-darkmode: #fff;
 }
 
 *{
